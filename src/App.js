@@ -2,7 +2,6 @@ import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faDiscord, faGithub, faItchIo} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
-
 import {ReactComponent as Logo} from './assets/twentyfivesoftware-logo.svg';
 
 export default function App() {
@@ -31,7 +30,7 @@ export default function App() {
                 </div>
             </div>
 
-            <div className="mountain"/>
+            <div className="image" id={'img' + Math.ceil(Math.random() * 4)}/>
         </div>
     );
 }

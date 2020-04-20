@@ -46,7 +46,7 @@ body {
     align-self: center;
 
     .logo {
-        height: 20vh;
+        width: 42vw;
 
         svg {
             height: inherit;
@@ -65,7 +65,7 @@ body {
     }
 
     .icons {
-        margin-top: 5rem;
+        margin-top: 3rem;
         display: grid;
         column-gap: 3rem;
         grid-template-columns: repeat(4, max-content);
@@ -108,7 +108,7 @@ body {
 
 }
 
-.mountain {
+.image {
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -116,15 +116,40 @@ body {
     right: 0;
     top: 0;
     left: 0;
-    background-image: url(../assets/mountain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    filter: blur(0.3rem);
     display: block;
+    z-index: -1;
 
-    @media(max-width: 1250px) {
+    mask: url(../assets/mask.png);
+    mask-size: 110vw 100vh;
+    mask-position: right;
+
+    background-repeat: no-repeat;
+
+    @media (max-width: 1250px) {
         display: none;
+    }
+
+    &#img1 {
+        background-image: url(../assets/img1.jpg);
+        background-position: 35vw 0;
+        background-size: cover;
+    }
+
+    &#img2 {
+        background-image: url(../assets/img2.jpg);
+        background-position: 37vw 0;
+        background-size: cover;
+    }
+
+    &#img3 {
+        background-image: url(../assets/img3.png);
+        background-size: 60vw auto;
+        background-position: right -20vw;
+    }
+
+    &#img4 {
+        background-image: url(../assets/img4.jpg);
+        background-position: 30vw;
+        background-size: cover;
     }
 }
