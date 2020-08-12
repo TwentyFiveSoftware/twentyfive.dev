@@ -1,9 +1,10 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faAngleDown, faAngleRight, faCalculator} from '@fortawesome/free-solid-svg-icons';
+import {faAngleDown, faAngleRight, faCalculator, faNewspaper} from '@fortawesome/free-solid-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 // import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
 import TwentyFiveIcon from './assets/icon.png';
+import FuncturyLogo from './assets/functury-logo.png';
 
 export default function App() {
     let projects = [
@@ -18,7 +19,31 @@ export default function App() {
                 to: '#FB8080',
                 buttons: '#FC9C76'
             }
-        }
+        },
+        {
+            image: <FontAwesomeIcon icon={faNewspaper}/>,
+            name: 'NewsHub',
+            description: 'A central location showing all new articles of many newspaper websites.',
+            projectUrl: 'https://newshub.twentyfive.dev/',
+            githubUrl: 'https://github.com/TwentyFiveSoftware/NewsHub',
+            colors: {
+                from: '#8EF7AA',
+                to: '#DFF494',
+                buttons: '#B7F69F'
+            }
+        },
+        {
+            image: <img alt={'f'} src={FuncturyLogo} style={{height: '70%'}}/>,
+            name: 'functury',
+            description: 'A website that brings together all the important information for various math functions.',
+            projectUrl: 'https://functury.web.app/',
+            githubUrl: 'https://www.github.com/TwentyFiveSoftware/functury',
+            colors: {
+                from: '#9CFCF8',
+                to: '#6E7BFB',
+                buttons: '#83B8F9'
+            }
+        },
     ];
 
     return (
