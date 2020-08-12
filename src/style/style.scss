@@ -116,7 +116,7 @@ body {
     column-gap: 7rem;
 
     &__image {
-        background: linear-gradient(to bottom right, #FCB76B, #FB8080);
+        //background: linear-gradient(to bottom right, #FCB76B, #FB8080);
         height: 20rem;
         border-radius: 1.5rem;
         display: grid;
@@ -159,8 +159,8 @@ body {
     text-decoration: none;
     margin-right: 2rem;
 
-    border: 0.3rem solid #FC9C76;
-    color: #FC9C76;
+    border: 0.3rem solid;
+    //color: #FC9C76;
 
     svg {
         margin: 0 1.5rem;

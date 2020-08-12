@@ -106,7 +106,6 @@ body {
   column-gap: 7rem;
 }
 .project__image {
-  background: linear-gradient(to bottom right, #FCB76B, #FB8080);
   height: 20rem;
   border-radius: 1.5rem;
   display: grid;
@@ -142,8 +141,7 @@ body {
   font-size: 1.8rem;
   text-decoration: none;
   margin-right: 2rem;
-  border: 0.3rem solid #FC9C76;
-  color: #FC9C76;
+  border: 0.3rem solid;
 }
 .button svg {
   margin: 0 1.5rem;

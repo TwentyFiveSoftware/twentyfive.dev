@@ -6,6 +6,21 @@ import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import TwentyFiveIcon from './assets/icon.png';
 
 export default function App() {
+    let projects = [
+        {
+            image: <FontAwesomeIcon icon={faCalculator}/>,
+            name: 'Calculator',
+            description: 'A simple minimalistic calculator for the web.',
+            projectUrl: 'https://twentyfivesoftware.github.io/calculator/',
+            githubUrl: 'https://www.github.com/TwentyFiveSoftware/calculator',
+            colors: {
+                from: '#FCB76B',
+                to: '#FB8080',
+                buttons: '#FC9C76'
+            }
+        }
+    ];
+
     return (
         <div className="app">
             <div className={'landing-zone'}>
@@ -20,17 +35,21 @@ export default function App() {
                     <div className={'projects-zone__subtitle'}>A selection of my latest projects that you can find on Github.</div>
                 </div>
                 <div className={'projects-zone__list'}>
-                    <div className={'project'}>
-                        <div className={'project__image'}><FontAwesomeIcon icon={faCalculator}/></div>
-                        <div className={'project__info'}>
-                            <div className={'project__name'}>Calculator</div>
-                            <div className={'project__description'}>A simple minimalistic calculator for the web.</div>
-                            <div className={'project__buttons'}>
-                                <a href={'https://twentyfivesoftware.github.io/calculator/'} className={'button button--icon-right'}>Open Website<FontAwesomeIcon icon={faAngleRight}/></a>
-                                <a href={'https://www.github.com/TwentyFiveSoftware/calculator'} className={'button'}><FontAwesomeIcon icon={faGithub}/>Visit on Github</a>
+                    {projects.map((project, index) =>
+                        <div className={'project'} key={index}>
+                            <div className={'project__image'} style={{background: `linear-gradient(to bottom right, ${project.colors.from}, ${project.colors.to})`}}>
+                                {project.image}
+                            </div>
+                            <div className={'project__info'}>
+                                <div className={'project__name'}>{project.name}</div>
+                                <div className={'project__description'}>{project.description}</div>
+                                <div className={'project__buttons'}>
+                                    <a href={project.projectUrl} className={'button button--icon-right'} style={{color: project.colors.buttons, borderColor: project.colors.buttons}}>Open Website<FontAwesomeIcon icon={faAngleRight}/></a>
+                                    <a href={project.githubUrl} className={'button'} style={{color: project.colors.buttons, borderColor: project.colors.buttons}}><FontAwesomeIcon icon={faGithub}/>Visit on Github</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    )}
                 </div>
             </div>
             <div className={'footer'}>
