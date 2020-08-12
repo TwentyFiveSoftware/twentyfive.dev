@@ -159,6 +159,20 @@ body {
   justify-content: left;
 }
 
+.footer {
+  height: 8rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer a {
+  font-size: 4rem;
+  text-decoration: none;
+  color: #484E60;
+  margin: 0 2rem;
+}
+
 .button {
   width: max-content;
   padding: 0.6rem 2rem 0.6rem 0;

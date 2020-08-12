@@ -178,6 +178,20 @@ body {
     }
 }
 
+.footer {
+    height: 8rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        font-size: 4rem;
+        text-decoration: none;
+        color: #484E60;
+        margin: 0 2rem;
+    }
+}
 
 .button {
     width: max-content;

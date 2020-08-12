@@ -1,8 +1,8 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAngleDown, faAngleRight, faCalculator, faNewspaper} from '@fortawesome/free-solid-svg-icons';
-import {faGithub} from '@fortawesome/free-brands-svg-icons';
-// import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
+import {faGithub, faItchIo} from '@fortawesome/free-brands-svg-icons';
+import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
 import TwentyFiveIcon from './assets/icon.png';
 import FuncturyLogo from './assets/functury-logo.png';
 
@@ -78,9 +78,9 @@ export default function App() {
                 </div>
             </div>
             <div className={'footer'}>
-                <a href={'https://www.github.com/TwentyFiveSoftware'}>Github</a>
-                <a href={'mailto:TwentyFiveSoftware@gmail.com'}>Mail</a>
-                <a href={'https://twentyfive.itch.io/'}>Itch</a>
+                <a href={'https://www.github.com/TwentyFiveSoftware'}><FontAwesomeIcon icon={faGithub}/></a>
+                <a href={'mailto:TwentyFiveSoftware@gmail.com'}><FontAwesomeIcon icon={faEnvelope}/></a>
+                <a href={'https://twentyfive.itch.io/'}><FontAwesomeIcon icon={faItchIo}/></a>
             </div>
         </div>
     );
