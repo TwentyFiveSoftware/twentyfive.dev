@@ -13,6 +13,7 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -81,6 +82,7 @@ body {
         color: #484E60;
         animation: bounce 2s infinite;
         z-index: 3;
+        outline: none;
     }
 
     @keyframes bounce {
