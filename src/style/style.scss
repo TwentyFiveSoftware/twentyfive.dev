@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
 
 :root {
-    //--color-button-landing-zone: #98C379; // #A1CF80
-
     --shadow: 0 0.3rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
@@ -83,33 +81,92 @@ body {
     }
 }
 
-//.button {
-//    width: max-content;
-//    padding: 0.75rem 4rem;
-//    border-radius: 1.2rem;
-//    font-size: 2.5rem;
-//    text-decoration: none;
-//
-//    border: 0.4rem solid var(--color-button-landing-zone);
-//    color: var(--color-button-landing-zone);
-//    box-shadow: var(--shadow);
-//
-//    svg {
-//        margin-right: 1.5rem;
-//    }
-//
-//    &--bold {
-//        font-weight: 500;
-//    }
-//
-//    &--filled {
-//        background-color: var(--color-button-landing-zone);
-//        color: #fff;
-//    }
-//
-//}
-//
-//.empty-space {
-//    width: 5rem;
-//}
-//
+.projects-zone {
+    padding: 8rem 5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #484E60;
+
+    &__title {
+        text-align: center;
+        font-weight: 900;
+        font-size: 5rem;
+        color: #ffffff;
+        letter-spacing: 0.15rem;
+        line-height: 1.2;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-weight: 500;
+        color: #7680A2;
+        font-size: 2rem;
+    }
+
+    &__list {
+        padding: 10rem 0;
+    }
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 30rem max-content;
+    column-gap: 7rem;
+
+    &__image {
+        background: linear-gradient(to bottom right, #FCB76B, #FB8080);
+        height: 20rem;
+        border-radius: 1.5rem;
+        display: grid;
+        place-items: center;
+        box-shadow: var(--shadow);
+        font-size: 7.5rem;
+        color: #ffffff;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    &__name {
+        color: #ffffff;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    &__description {
+        color: #EDEDED;
+        font-size: 2rem;
+    }
+
+    &__buttons {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: left;
+    }
+}
+
+
+.button {
+    width: max-content;
+    padding: 0.6rem 2rem 0.6rem 0;
+    border-radius: 1.2rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-right: 2rem;
+
+    border: 0.3rem solid #FC9C76;
+    color: #FC9C76;
+
+    svg {
+        margin: 0 1.5rem;
+    }
+
+    &--icon-right {
+        padding: 0.6rem 0 0.6rem 2rem;
+    }
+}
