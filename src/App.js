@@ -57,7 +57,7 @@ export default function App() {
             <div className={'projects-zone'} id={'projects'}>
                 <div>
                     <div className={'projects-zone__title'}>PROJECTS</div>
-                    <div className={'projects-zone__subtitle'}>A selection of my latest projects that you can find on Github.</div>
+                    <div className={'projects-zone__subtitle'}>A selection of my latest projects that you can also find on <a href={'https://www.github.com/TwentyFiveSoftware'}>Github</a>.</div>
                 </div>
                 <div className={'projects-zone__list'}>
                     {projects.map((project, index) =>
