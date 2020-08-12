@@ -114,6 +114,11 @@ body {
     display: grid;
     grid-template-columns: 30rem max-content;
     column-gap: 7rem;
+    margin-bottom: 7rem;
+
+    &:nth-child(even) {
+        margin-left: 10%;
+    }
 
     &__image {
         //background: linear-gradient(to bottom right, #FCB76B, #FB8080);
@@ -130,6 +135,7 @@ body {
         display: flex;
         flex-direction: column;
         align-self: center;
+        max-width: 30vw;
     }
 
     &__name {
@@ -141,6 +147,8 @@ body {
     &__description {
         color: #EDEDED;
         font-size: 2rem;
+        line-height: 1.1;
+        padding: 0.15rem 0;
     }
 
     &__buttons {

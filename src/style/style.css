@@ -104,6 +104,10 @@ body {
   display: grid;
   grid-template-columns: 30rem max-content;
   column-gap: 7rem;
+  margin-bottom: 7rem;
+}
+.project:nth-child(even) {
+  margin-left: 10%;
 }
 .project__image {
   height: 20rem;
@@ -118,6 +122,7 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
+  max-width: 30vw;
 }
 .project__name {
   color: #ffffff;
@@ -127,6 +132,8 @@ body {
 .project__description {
   color: #EDEDED;
   font-size: 2rem;
+  line-height: 1.1;
+  padding: 0.15rem 0;
 }
 .project__buttons {
   padding-top: 2rem;
