@@ -78,9 +78,9 @@ export default function App() {
                 </div>
             </div>
             <div className={'footer'}>
-                <a href={'https://www.github.com/TwentyFiveSoftware'}><FontAwesomeIcon icon={faGithub}/></a>
-                <a href={'mailto:TwentyFiveSoftware@gmail.com'}><FontAwesomeIcon icon={faEnvelope}/></a>
-                <a href={'https://twentyfive.itch.io/'}><FontAwesomeIcon icon={faItchIo}/></a>
+                <a className={'social-button'} href={'https://www.github.com/TwentyFiveSoftware'}><FontAwesomeIcon icon={faGithub}/></a>
+                <a className={'social-button'} href={'mailto:TwentyFiveSoftware@gmail.com'}><FontAwesomeIcon icon={faEnvelope}/></a>
+                <a className={'social-button'} href={'https://twentyfive.itch.io/'}><FontAwesomeIcon icon={faItchIo}/></a>
             </div>
         </div>
     );
