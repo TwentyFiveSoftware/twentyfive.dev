@@ -50,8 +50,15 @@ export default function App() {
         <div className="app">
             <div className={'landing-zone'}>
                 <div className={'landing-zone__background-image'}/>
-                <div className={'landing-zone__logo'}/>
                 <img className={'landing-zone__icon'} src={TwentyFiveIcon} alt={''}/>
+                <div className={'landing-zone__overlay'}>
+                    <div className={'landing-zone__logo'}/>
+                    <div className={'landing-zone__social-buttons'}>
+                        <a className={'social-button'} href={'https://www.github.com/TwentyFiveSoftware'}><FontAwesomeIcon icon={faGithub}/></a>
+                        <a className={'social-button'} href={'mailto:TwentyFiveSoftware@gmail.com'}><FontAwesomeIcon icon={faEnvelope}/></a>
+                        <a className={'social-button'} href={'https://twentyfive.itch.io/'}><FontAwesomeIcon icon={faItchIo}/></a>
+                    </div>
+                </div>
                 <a href={'#projects'} className={'landing-zone__angle'}><FontAwesomeIcon icon={faAngleDown}/></a>
             </div>
             <div className={'projects-zone'} id={'projects'}>
