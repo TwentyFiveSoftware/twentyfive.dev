@@ -1,20 +1,18 @@
 import React from 'react';
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faAngleDown} from '@fortawesome/free-solid-svg-icons';
 // import {faGithub, faItchIo} from '@fortawesome/free-brands-svg-icons';
 // import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
-// import {ReactComponent as Logo} from './assets/twentyfivesoftware-logo.svg';
+import TwentyFiveIcon from './assets/icon.png';
 
 export default function App() {
     return (
         <div className="app">
             <div className={'landing-zone'}>
                 <div className={'landing-zone__background-image'}/>
-                <div className={'landing_zone__logo'}></div>
-
-                <div className={'landing-zone__bottom'}>
-                    <a href={'#projects'} className={'button button--filled'}>Explore my projects</a>
-                    <a href={'https://www.github.com/TwentyFiveSoftware'} className={'button'}>Visit me on Github</a>
-                </div>
+                <div className={'landing-zone__logo'}/>
+                <img className={'landing-zone__icon'} src={TwentyFiveIcon} alt={''}/>
+                <a href={'#projects'} className={'landing-zone__angle'}><FontAwesomeIcon icon={faAngleDown}/></a>
             </div>
             <div className={'projects-zone'} id={'projects'}>
                 <div className={'projects-zone__title-container'}>
