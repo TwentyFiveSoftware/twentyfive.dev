@@ -5,6 +5,14 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 
+const Button = ({icon, iconRight, text, color, href}) => (
+    <a href={href} className={`button ${iconRight && 'button--icon-right'}`} style={{color: color, borderColor: color}}>
+        {!iconRight && <FontAwesomeIcon icon={icon}/>}
+        {text}
+        {iconRight && <FontAwesomeIcon icon={icon}/>}
+    </a>
+);
+
 const Project = ({project}) => {
     const {image, name, description, projectUrl, githubUrl, colors} = project;
 
@@ -18,8 +26,8 @@ const Project = ({project}) => {
                     <div className={'project__name'}>{name}</div>
                     <div className={'project__description'}>{description}</div>
                     <div className={'project__buttons'}>
-                        <a href={projectUrl} className={'button button--icon-right'} style={{color: colors.buttons, borderColor: colors.buttons}}>Open Website<FontAwesomeIcon icon={faAngleRight}/></a>
-                        <a href={githubUrl} className={'button'} style={{color: colors.buttons, borderColor: colors.buttons}}><FontAwesomeIcon icon={faGithub}/>Visit on Github</a>
+                        <Button icon={faAngleRight} iconRight={true} href={projectUrl} color={colors.buttons} text={'Open Website'}/>
+                        <Button icon={faGithub} iconRight={false} href={githubUrl} color={colors.buttons} text={'Visit on Github'}/>
                     </div>
                 </div>
             </div>
