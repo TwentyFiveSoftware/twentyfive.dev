@@ -5,9 +5,9 @@ import {faAngleDown, faCalculator, faNewspaper} from '@fortawesome/free-solid-sv
 import {faGithub, faItchIo} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
 
-import TwentyFiveIcon from './assets/icon.png';
+import {ReactComponent as TwentyFiveIcon} from './assets/icon.svg';
 import FuncturyLogo from './assets/functury-logo.png';
-import Project from "./components/Project";
+import Project from './components/Project';
 
 export default function App() {
     let projects = [
@@ -53,7 +53,7 @@ export default function App() {
         <div className="app">
             <div className={'landing-zone'}>
                 <div className={'landing-zone__background-image'}/>
-                <img className={'landing-zone__icon'} src={TwentyFiveIcon} alt={''}/>
+                <div className={'landing-zone__icon'}><TwentyFiveIcon/></div>
                 <div className={'landing-zone__overlay'}>
                     <div className={'landing-zone__logo'}/>
                     <div className={'landing-zone__social-buttons'}>
@@ -67,7 +67,7 @@ export default function App() {
             <div className={'projects-zone'} id={'projects'}>
                 <div>
                     <div className={'projects-zone__title'}>PROJECTS</div>
-                    <div className={'projects-zone__subtitle'}>A selection of my latest projects. All of them are open source on <a href={'https://www.github.com/TwentyFiveSoftware'}>Github</a>.</div>
+                    <div className={'projects-zone__subtitle'}>A selection of my latest projects. All of them are open source on GitHub.</div>
                 </div>
                 <div className={'projects-zone__list'}>
                     {projects.map((project, index) =>
