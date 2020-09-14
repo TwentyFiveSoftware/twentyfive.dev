@@ -15,7 +15,7 @@ export default function App() {
             image: <FontAwesomeIcon icon={faCalculator}/>,
             name: 'Calculator',
             description: 'A simple minimalistic calculator for the web.',
-            projectUrl: 'https://twentyfivesoftware.github.io/calculator/',
+            projectUrl: 'https://calculator.twentyfive.dev/',
             githubUrl: 'https://www.github.com/TwentyFiveSoftware/calculator',
             colors: {
                 from: '#FCB76B',
