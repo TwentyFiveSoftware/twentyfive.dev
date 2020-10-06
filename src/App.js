@@ -1,78 +1,16 @@
 import React from 'react';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faAngleDown, faCalculator, faNewspaper, faVideo} from '@fortawesome/free-solid-svg-icons';
-import {faGithub, faItchIo, faYoutube} from '@fortawesome/free-brands-svg-icons';
+import {faAngleDown} from '@fortawesome/free-solid-svg-icons';
+import {faGithub, faItchIo} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
 
 import {ReactComponent as TwentyFiveIcon} from './assets/icon.svg';
-import FuncturyLogo from './assets/functury-logo.png';
-import Project from './components/Project';
+import ProjectElement from './components/ProjectElement';
+
+import {COLORS, PROJECTS} from './content';
 
 export default function App() {
-    let projects = [
-        {
-            image: <FontAwesomeIcon icon={faYoutube}/>,
-            name: 'Watch2Gether (Clone)',
-            description: 'An approach to implement the video synchronization mechanic of the original Watch2Gether (w2g.tv).',
-            projectUrl: 'https://w2g.twentyfive.dev/',
-            githubUrl: 'https://github.com/TwentyFiveSoftware/watch2gether-client',
-            colors: {
-                from: '#3D1053',
-                to: '#AC5389',
-                buttons: '#AC5389'
-            }
-        },
-        {
-            image: <FontAwesomeIcon icon={faVideo}/>,
-            name: 'Video Recorder',
-            description: 'A simple client side screen recorder.',
-            projectUrl: 'https://recorder.twentyfive.dev/',
-            githubUrl: 'https://github.com/TwentyFiveSoftware/Video-Recorder',
-            colors: {
-                from: '#D74C7F',
-                to: '#EE4758',
-                buttons: '#EF4859'
-            }
-        },
-        {
-            image: <FontAwesomeIcon icon={faCalculator}/>,
-            name: 'Calculator',
-            description: 'A simple minimalistic calculator for the web.',
-            projectUrl: 'https://calculator.twentyfive.dev/',
-            githubUrl: 'https://github.com/TwentyFiveSoftware/calculator',
-            colors: {
-                from: '#FCB76B',
-                to: '#FB8080',
-                buttons: '#FC9C76'
-            }
-        },
-        {
-            image: <FontAwesomeIcon icon={faNewspaper}/>,
-            name: 'NewsHub',
-            description: 'A central location showing all new articles of many newspaper websites.',
-            projectUrl: 'https://newshub.twentyfive.dev/',
-            githubUrl: 'https://github.com/TwentyFiveSoftware/NewsHub',
-            colors: {
-                from: '#8EF7AA',
-                to: '#DFF494',
-                buttons: '#B7F69F'
-            }
-        },
-        {
-            image: <img alt={'f'} src={FuncturyLogo} style={{height: '70%'}}/>,
-            name: 'functury',
-            description: 'A website that brings together all the important information for various math functions.',
-            projectUrl: 'https://functury.web.app/',
-            githubUrl: 'https://github.com/TwentyFiveSoftware/functury',
-            colors: {
-                from: '#9CFCF8',
-                to: '#6E7BFB',
-                buttons: '#83B8F9'
-            }
-        },
-    ];
-
     return (
         <div className="app">
             <div className={'landing-zone'}>
@@ -94,8 +32,8 @@ export default function App() {
                     <div className={'projects-zone__subtitle'}>A selection of my latest projects. All of them are open source on GitHub.</div>
                 </div>
                 <div className={'projects-zone__list'}>
-                    {projects.map((project, index) =>
-                        <Project project={project} key={index}/>
+                    {PROJECTS.map((project, index) =>
+                        <ProjectElement project={project} color={COLORS[index]} key={index}/>
                     )}
                 </div>
             </div>
