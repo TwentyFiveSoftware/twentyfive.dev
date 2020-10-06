@@ -212,6 +212,7 @@ body {
         box-shadow: var(--shadow);
         font-size: 7.5rem;
         color: #ffffff;
+        user-select: none;
 
         @media (max-width: 750px) {
             height: 10rem;

@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faAngleDown, faCalculator, faNewspaper} from '@fortawesome/free-solid-svg-icons';
-import {faGithub, faItchIo} from '@fortawesome/free-brands-svg-icons';
+import {faAngleDown, faCalculator, faNewspaper, faVideo} from '@fortawesome/free-solid-svg-icons';
+import {faGithub, faItchIo, faYoutube} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
 
 import {ReactComponent as TwentyFiveIcon} from './assets/icon.svg';
@@ -12,11 +12,35 @@ import Project from './components/Project';
 export default function App() {
     let projects = [
         {
+            image: <FontAwesomeIcon icon={faYoutube}/>,
+            name: 'Watch2Gether (Clone)',
+            description: 'An approach to implement the video synchronization mechanic of the original Watch2Gether (w2g.tv).',
+            projectUrl: 'https://w2g.twentyfive.dev/',
+            githubUrl: 'https://github.com/TwentyFiveSoftware/watch2gether-client',
+            colors: {
+                from: '#3D1053',
+                to: '#AC5389',
+                buttons: '#AC5389'
+            }
+        },
+        {
+            image: <FontAwesomeIcon icon={faVideo}/>,
+            name: 'Video Recorder',
+            description: 'A simple client side screen recorder.',
+            projectUrl: 'https://recorder.twentyfive.dev/',
+            githubUrl: 'https://github.com/TwentyFiveSoftware/Video-Recorder',
+            colors: {
+                from: '#D74C7F',
+                to: '#EE4758',
+                buttons: '#EF4859'
+            }
+        },
+        {
             image: <FontAwesomeIcon icon={faCalculator}/>,
             name: 'Calculator',
             description: 'A simple minimalistic calculator for the web.',
             projectUrl: 'https://calculator.twentyfive.dev/',
-            githubUrl: 'https://www.github.com/TwentyFiveSoftware/calculator',
+            githubUrl: 'https://github.com/TwentyFiveSoftware/calculator',
             colors: {
                 from: '#FCB76B',
                 to: '#FB8080',
@@ -40,7 +64,7 @@ export default function App() {
             name: 'functury',
             description: 'A website that brings together all the important information for various math functions.',
             projectUrl: 'https://functury.web.app/',
-            githubUrl: 'https://www.github.com/TwentyFiveSoftware/functury',
+            githubUrl: 'https://github.com/TwentyFiveSoftware/functury',
             colors: {
                 from: '#9CFCF8',
                 to: '#6E7BFB',
