@@ -1,9 +1,16 @@
 export default class Project {
-    constructor(name, image, description, githubUrl, projectUrl) {
+    constructor(name, githubRepoName, image) {
         this.name = name;
+        this.githubUrl = githubRepoName;
         this.image = image;
-        this.description = description;
-        this.githubUrl = githubUrl;
-        this.projectUrl = projectUrl;
+    }
+
+    fetchGithubRepoInfo = async () => {
+        let repos = await fetch('https://api.github.com/users/TwentyFiveSoftware/repos');
+        repos = await repos.json();
+
+        const repo = repos.find(r => r.name === this.githubUrl);
+
+        return {description: repo.description, projectUrl: repo.homepage, githubUrl: `https://github.com/TwentyFiveSoftware/${this.githubUrl}`}
     }
 }

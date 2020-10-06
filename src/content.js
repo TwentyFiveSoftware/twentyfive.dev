@@ -19,32 +19,27 @@ export const COLORS = [
 export const PROJECTS = [
     new Project(
         'Watch2Gether (Clone)',
-        new ImageInfo(faYoutube),
-        'An approach to implement the video synchronization mechanic of the original Watch2Gether (w2g.tv).',
-        'https://github.com/TwentyFiveSoftware/watch2gether-client',
-        'https://w2g.twentyfive.dev/'),
+        'watch2gether-client',
+        new ImageInfo(faYoutube)
+    ),
     new Project(
         'Video Recorder',
+        'Video-Recorder',
         new ImageInfo(faVideo),
-        'A simple client side screen recorder.',
-        'https://github.com/TwentyFiveSoftware/Video-Recorder',
-        'https://recorder.twentyfive.dev/'),
+    ),
     new Project(
         'Calculator',
-        new ImageInfo(faCalculator),
-        'A simple minimalistic calculator for the web.',
-        'https://github.com/TwentyFiveSoftware/calculator',
-        'https://calculator.twentyfive.dev/'),
+        'calculator',
+        new ImageInfo(faCalculator)
+    ),
     new Project(
         'NewsHub',
+        'NewsHub',
         new ImageInfo(faNewspaper),
-        'A central location showing all new articles of many newspaper websites.',
-        'https://github.com/TwentyFiveSoftware/NewsHub',
-        'https://newshub.twentyfive.dev/'),
+    ),
     new Project(
         'functury',
-        new ImageInfo(null, FuncturyLogo, {height: '70%'}),
-        'A website that brings together all the important information for various math functions.',
-        'https://github.com/TwentyFiveSoftware/functury',
-        'https://functury.twentyfive.dev')
+        'functury',
+        new ImageInfo(null, FuncturyLogo, {height: '70%'})
+    )
 ];
