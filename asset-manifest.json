@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.423f8067.chunk.css",
+    "main.css": "/static/css/main.c793df47.chunk.css",
     "main.js": "/static/js/main.1b8c56d8.chunk.js",
     "main.js.map": "/static/js/main.1b8c56d8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0993b479.js",
@@ -8,9 +8,9 @@
     "static/js/2.c78a43bd.chunk.js": "/static/js/2.c78a43bd.chunk.js",
     "static/js/2.c78a43bd.chunk.js.map": "/static/js/2.c78a43bd.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0d35fdb8298cff4127da7d4bb933346a.js": "/precache-manifest.0d35fdb8298cff4127da7d4bb933346a.js",
+    "precache-manifest.cc015dd777698cf1e7ead8af4b4e14fc.js": "/precache-manifest.cc015dd777698cf1e7ead8af4b4e14fc.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.423f8067.chunk.css.map": "/static/css/main.423f8067.chunk.css.map",
+    "static/css/main.c793df47.chunk.css.map": "/static/css/main.c793df47.chunk.css.map",
     "static/js/2.c78a43bd.chunk.js.LICENSE.txt": "/static/js/2.c78a43bd.chunk.js.LICENSE.txt",
     "static/media/icon.797ae5bb.svg": "/static/media/icon.797ae5bb.svg",
     "static/media/style.css": "/static/media/twentyfivesoftware-logo.1934791a.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.0993b479.js",
     "static/js/2.c78a43bd.chunk.js",
-    "static/css/main.423f8067.chunk.css",
+    "static/css/main.c793df47.chunk.css",
     "static/js/main.1b8c56d8.chunk.js"
   ]
 }
