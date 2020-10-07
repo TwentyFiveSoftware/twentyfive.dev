@@ -245,6 +245,8 @@ body {
 
         @media (max-width: 550px) {
             text-align: center;
+            line-height: 1;
+            margin: 1rem 0;
         }
     }
 
@@ -283,6 +285,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 550px) {
+        height: 8rem;
+    }
 }
 
 .button {
@@ -351,6 +357,7 @@ body {
 
     @media (max-width: 550px) {
         margin: 0 1rem;
+        font-size: 3rem;
     }
 
 }
