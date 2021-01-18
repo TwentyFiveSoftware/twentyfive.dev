@@ -1,0 +1,25 @@
+.button {
+    width: max-content;
+    padding: 0.6rem 2rem 0.6rem 0;
+    border-radius: 1.2rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-right: 2rem;
+    border: 0.3rem solid;
+    user-select: none;
+
+    @media (max-width: 550px) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    svg {
+        margin: 0 1.5rem;
+    }
+}
+
+.button__iconRight {
+    @extend .button;
+
+    padding: 0.6rem 0 0.6rem 2rem;
+}
