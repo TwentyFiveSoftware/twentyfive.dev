@@ -1,4 +1,4 @@
-import React, {FunctionComponent, useEffect, useState} from 'react';
+import React, {FunctionComponent} from 'react';
 import {Fade} from 'react-awesome-reveal';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
@@ -6,26 +6,11 @@ import {faGithub} from '@fortawesome/free-brands-svg-icons';
 
 import styles from '../styles/ProjectElement.module.scss';
 
-import type {Color, Project, ProjectInfo} from '../types';
+import type {Color, ProjectInfo} from '../types';
 import Button from './Button';
 
-const ProjectElement: FunctionComponent<{ project: Project, color: Color }> = ({project, color}) => {
-    const [projectInfo, setProjectInfo] = useState<ProjectInfo>({description: '', githubUrl: '', homepage: ''});
-
-    useEffect(() => {
-        (async () => {
-            const response = await fetch('https://api.github.com/users/TwentyFiveSoftware/repos');
-            const repos = await response.json();
-
-            setProjectInfo({
-                ...repos.find((repo: { name: string }) => repo.name === project.githubRepoName),
-                githubUrl: `https://github.com/TwentyFiveSoftware/${project.githubRepoName}`
-            });
-        })();
-    }, [project.githubRepoName]);
-
-    const {name, image} = project;
-    const {description, githubUrl, homepage} = projectInfo;
+const ProjectElement: FunctionComponent<{ project: ProjectInfo, color: Color }> = ({project, color}) => {
+    const {name, image, description, github, homepage} = project;
 
     return (
         <Fade direction={'up'} cascade={true} triggerOnce={true} className={styles.project}>
@@ -39,7 +24,7 @@ const ProjectElement: FunctionComponent<{ project: Project, color: Color }> = ({
                     <div className={styles.description}>{description}</div>
                     <div className={styles.buttons}>
                         <Button icon={faAngleRight} iconRight={true} href={homepage} color={color.buttons} text={'Open Website'}/>
-                        <Button icon={faGithub} iconRight={false} href={githubUrl} color={color.buttons} text={'Visit on Github'}/>
+                        <Button icon={faGithub} iconRight={false} href={github} color={color.buttons} text={'Visit on Github'}/>
                     </div>
                 </div>
             </>

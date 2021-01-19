@@ -17,32 +17,32 @@ export const COLORS: Color[] = [
 export const PROJECTS: Project[] = [
     {
         name: 'FileShare',
-        githubRepoName: 'fileshare',
+        fullName: 'TwentyFiveSoftware/fileshare',
         image: {fontAwesomeIcon: faShare}
     },
     {
         name: 'Watch2Gether (Clone)',
-        githubRepoName: 'watch2gether-client',
+        fullName: 'TwentyFiveSoftware/watch2gether-client',
         image: {fontAwesomeIcon: faYoutube}
     },
     {
         name: 'Video Recorder',
-        githubRepoName: 'Video-Recorder',
+        fullName: 'TwentyFiveSoftware/Video-Recorder',
         image: {fontAwesomeIcon: faVideo}
     },
     {
         name: 'Calculator',
-        githubRepoName: 'calculator',
+        fullName: 'TwentyFiveSoftware/calculator',
         image: {fontAwesomeIcon: faCalculator}
     },
     {
         name: 'NewsHub',
-        githubRepoName: 'NewsHub',
+        fullName: 'TwentyFiveSoftware/NewsHub',
         image: {fontAwesomeIcon: faNewspaper}
     },
     {
         name: 'functury',
-        githubRepoName: 'functury',
+        fullName: 'TwentyFiveSoftware/functury',
         image: {image: FuncturyLogo, imageStyle: {height: '70%'}}
     }
 ];

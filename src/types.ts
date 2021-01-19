@@ -6,20 +6,20 @@ export type ImageInfo = {
     imageStyle?: { height: string }
 }
 
-export type Project = {
-    name: string,
-    githubRepoName: string,
-    image: ImageInfo
-}
-
 export type Color = {
     from: string,
     to: string,
     buttons: string
 }
 
-export type ProjectInfo = {
-    description: '',
-    homepage: '',
-    githubUrl: ''
+export interface Project {
+    name: string,
+    fullName: string,
+    image: ImageInfo
+}
+
+export interface ProjectInfo extends Project {
+    description: string,
+    homepage: string,
+    github: string,
 }

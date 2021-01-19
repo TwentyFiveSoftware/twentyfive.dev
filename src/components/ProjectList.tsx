@@ -1,0 +1,31 @@
+import React, {useEffect, useState} from 'react';
+import styles from '../styles/App.module.scss';
+import type {ProjectInfo} from '../types';
+import {COLORS, PROJECTS} from '../content';
+import ProjectElement from './ProjectElement';
+
+const ProjectList = () => {
+    const [projects, setProjects] = useState<ProjectInfo[]>([]);
+
+    useEffect(() => {
+        (async () => {
+            const response = await fetch('https://api.github.com/users/TwentyFiveSoftware/repos');
+            const repos = await response.json();
+
+            setProjects(PROJECTS.map((project) => {
+                const {homepage, description, html_url} = repos.find((repo: { full_name: string }) => repo.full_name === project.fullName);
+                return ({...project, homepage, description, github: html_url});
+            }));
+        })();
+    }, []);
+
+    return (
+        <div className={styles.list}>
+            {projects.map((project, index) =>
+                <ProjectElement project={project} color={COLORS[index]} key={index}/>
+            )}
+        </div>
+    );
+};
+
+export default ProjectList;

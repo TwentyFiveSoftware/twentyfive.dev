@@ -8,9 +8,7 @@ import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
 import styles from './styles/App.module.scss';
 
 import {ReactComponent as TwentyFiveIcon} from './assets/icon.svg';
-import ProjectElement from './components/ProjectElement';
-
-import {COLORS, PROJECTS} from './content';
+import ProjectList from './components/ProjectList';
 
 const App = () => (
     <>
@@ -32,11 +30,7 @@ const App = () => (
                 <div className={styles.title}>PROJECTS</div>
                 <div className={styles.subtitle}>A selection of my latest projects. All of them are open source on GitHub.</div>
             </div>
-            <div className={styles.list}>
-                {PROJECTS.map((project, index) =>
-                    <ProjectElement project={project} color={COLORS[index]} key={index}/>
-                )}
-            </div>
+            <ProjectList/>
         </div>
         <div className={styles.footer}>
             <a className={styles.socialButton} href={'https://www.github.com/TwentyFiveSoftware'}><FontAwesomeIcon icon={faGithub}/></a>
