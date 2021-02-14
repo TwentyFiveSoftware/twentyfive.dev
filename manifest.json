@@ -1,6 +1,6 @@
 {
     "short_name": "TwentyFive",
-    "name": "TwentyFive.dev",
+    "name": "TwentyFiveSoftware",
     "icons": [
         {
             "src": "icon.png",
@@ -10,5 +10,5 @@
     "start_url": ".",
     "display": "standalone",
     "theme_color": "#98C379",
-    "background_color": "#ffffff"
+    "background_color": "#484E60"
 }
