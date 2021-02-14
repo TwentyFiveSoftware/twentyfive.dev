@@ -20,11 +20,11 @@ const ProjectList = () => {
     }, []);
 
     return (
-        <div className={styles.list}>
+        <ul className={styles.list}>
             {projects.map((project, index) =>
                 <ProjectElement project={project} color={COLORS[index]} key={index}/>
             )}
-        </div>
+        </ul>
     );
 };
 

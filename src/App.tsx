@@ -12,7 +12,7 @@ import ProjectList from './components/ProjectList';
 
 const App = () => (
     <>
-        <div className={styles.landingZone}>
+        <section className={styles.landingZone}>
             <div className={styles.background}/>
             <div className={styles.icon}><TwentyFiveIcon/></div>
             <div className={styles.overlay}>
@@ -24,19 +24,19 @@ const App = () => (
                 </div>
             </div>
             <a href={'#projects'} className={styles.angle}><FontAwesomeIcon icon={faAngleDown}/></a>
-        </div>
-        <div className={styles.projectsZone} id={'projects'}>
+        </section>
+        <main className={styles.projectsZone} id={'projects'}>
             <div>
-                <div className={styles.title}>PROJECTS</div>
-                <div className={styles.subtitle}>A selection of my latest projects. All of them are open source on GitHub.</div>
+                <h1 className={styles.title}>PROJECTS</h1>
+                <p className={styles.subtitle}>A selection of my latest projects. All of them are open source on GitHub.</p>
             </div>
             <ProjectList/>
-        </div>
-        <div className={styles.footer}>
+        </main>
+        <footer className={styles.footer}>
             <a className={styles.socialButton} href={'https://www.github.com/TwentyFiveSoftware'}><FontAwesomeIcon icon={faGithub}/></a>
             <a className={styles.socialButton} href={'mailto:TwentyFiveSoftware@gmail.com'}><FontAwesomeIcon icon={faEnvelope}/></a>
             <a className={styles.socialButton} href={'https://twentyfive.itch.io/'}><FontAwesomeIcon icon={faItchIo}/></a>
-        </div>
+        </footer>
     </>
 );
 

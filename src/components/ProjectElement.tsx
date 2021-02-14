@@ -15,18 +15,18 @@ const ProjectElement: FunctionComponent<{ project: ProjectInfo, color: Color }> 
     return (
         <Fade direction={'up'} cascade={true} triggerOnce={true} className={styles.project}>
             <>
-                <div className={styles.image} style={{background: `linear-gradient(to bottom right, ${color.from}, ${color.to})`}}>
+                <figure className={styles.image} style={{background: `linear-gradient(to bottom right, ${color.from}, ${color.to})`}}>
                     {image.fontAwesomeIcon && <FontAwesomeIcon icon={image.fontAwesomeIcon}/>}
                     {!image.fontAwesomeIcon && <img alt={''} src={image.image} style={image.imageStyle}/>}
-                </div>
-                <div className={styles.info}>
-                    <div className={styles.name}>{name}</div>
-                    <div className={styles.description}>{description}</div>
+                </figure>
+                <article className={styles.info} itemScope itemType={'http://schema.org/Project'}>
+                    <h2 className={styles.name} itemProp={'name'}>{name}</h2>
+                    <p className={styles.description} itemProp={'description'}>{description}</p>
                     <div className={styles.buttons}>
-                        <Button icon={faAngleRight} iconRight={true} href={homepage} color={color.buttons} text={'Open Website'}/>
-                        <Button icon={faGithub} iconRight={false} href={github} color={color.buttons} text={'Visit on Github'}/>
+                        <Button icon={faAngleRight} iconRight={true} href={homepage} color={color.buttons} text={'Open Website'} itemProp={'url'}/>
+                        <Button icon={faGithub} iconRight={false} href={github} color={color.buttons} text={'Visit on Github'} itemProp={'identifier'}/>
                     </div>
-                </div>
+                </article>
             </>
         </Fade>
     );

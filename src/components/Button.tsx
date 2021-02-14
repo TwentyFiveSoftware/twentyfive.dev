@@ -4,9 +4,9 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 import styles from '../styles/Button.module.scss';
 
-const Button: FunctionComponent<{ icon: IconDefinition, iconRight: boolean, text: string, color: string, href: string }> =
-    ({icon, iconRight, text, color, href}) => (
-        <a href={href} className={iconRight ? styles.button__iconRight : styles.button} style={{color: color, borderColor: color}}>
+const Button: FunctionComponent<{ icon: IconDefinition, iconRight: boolean, text: string, color: string, href: string, itemProp: string }> =
+    ({icon, iconRight, text, color, href, itemProp}) => (
+        <a href={href} className={iconRight ? styles.button__iconRight : styles.button} style={{color: color, borderColor: color}} itemProp={itemProp}>
             {!iconRight && <FontAwesomeIcon icon={icon}/>}
             {text}
             {iconRight && <FontAwesomeIcon icon={icon}/>}
