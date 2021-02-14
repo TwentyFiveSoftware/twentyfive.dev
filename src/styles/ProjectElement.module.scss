@@ -31,8 +31,9 @@
 .image {
     height: 20rem;
     border-radius: 1.5rem;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: var(--shadow);
     font-size: 7.5rem;
     color: #ffffff;
