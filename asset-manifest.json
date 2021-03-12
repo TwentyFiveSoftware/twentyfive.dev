@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.62368d0d.chunk.css",
+    "main.css": "/static/css/main.635062e9.chunk.css",
     "main.js": "/static/js/main.48b562d2.chunk.js",
     "main.js.map": "/static/js/main.48b562d2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.33d764cb.js",
@@ -8,7 +8,7 @@
     "static/js/2.639315b4.chunk.js": "/static/js/2.639315b4.chunk.js",
     "static/js/2.639315b4.chunk.js.map": "/static/js/2.639315b4.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.62368d0d.chunk.css.map": "/static/css/main.62368d0d.chunk.css.map",
+    "static/css/main.635062e9.chunk.css.map": "/static/css/main.635062e9.chunk.css.map",
     "static/js/2.639315b4.chunk.js.LICENSE.txt": "/static/js/2.639315b4.chunk.js.LICENSE.txt",
     "static/media/icon.f8461fe0.svg": "/static/media/icon.f8461fe0.svg",
     "static/media/App.module.scss": "/static/media/twentyfivesoftware-logo.f2a26368.png"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.33d764cb.js",
     "static/js/2.639315b4.chunk.js",
-    "static/css/main.62368d0d.chunk.css",
+    "static/css/main.635062e9.chunk.css",
     "static/js/main.48b562d2.chunk.js"
   ]
 }
