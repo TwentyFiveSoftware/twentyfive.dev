@@ -1,9 +1,6 @@
-import {faCalculator, faNewspaper, faShare, faVideo} from '@fortawesome/free-solid-svg-icons';
+import {faCalculator, faKeyboard, faRocket, faShare, faVideo} from '@fortawesome/free-solid-svg-icons';
 import {faYoutube} from '@fortawesome/free-brands-svg-icons';
-
-import FuncturyLogo from './assets/functury-logo.png';
 import type {Color, Project} from './types';
-
 
 export const COLORS: Color[] = [
     {from: '#D74C7F', to: '#EE4758', buttons: '#EF4859'},
@@ -15,6 +12,16 @@ export const COLORS: Color[] = [
 ];
 
 export const PROJECTS: Project[] = [
+    {
+        name: 'SpaceX',
+        fullName: 'TwentyFiveSoftware/spacex',
+        image: {fontAwesomeIcon: faRocket}
+    },
+    {
+        name: 'TypeRace',
+        fullName: 'TwentyFiveSoftware/typerace',
+        image: {fontAwesomeIcon: faKeyboard}
+    },
     {
         name: 'FileShare',
         fullName: 'TwentyFiveSoftware/fileshare',
@@ -34,15 +41,5 @@ export const PROJECTS: Project[] = [
         name: 'Calculator',
         fullName: 'TwentyFiveSoftware/calculator',
         image: {fontAwesomeIcon: faCalculator}
-    },
-    {
-        name: 'NewsHub',
-        fullName: 'TwentyFiveSoftware/NewsHub',
-        image: {fontAwesomeIcon: faNewspaper}
-    },
-    {
-        name: 'functury',
-        fullName: 'TwentyFiveSoftware/functury',
-        image: {image: FuncturyLogo, imageStyle: {height: '70%'}}
     }
 ];
