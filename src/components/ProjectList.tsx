@@ -13,7 +13,7 @@ const ProjectList = () => {
             const repos = await response.json();
 
             setProjects(PROJECTS.map((project) => {
-                const {homepage, description, html_url} = repos.find((repo: { full_name: string }) => repo.full_name === project.fullName);
+                const {homepage = '', description = '', html_url = ''} = repos.find((repo: { full_name: string }) => repo.full_name === project.fullName) ?? {};
                 return ({...project, homepage, description, github: html_url});
             }));
         })();
