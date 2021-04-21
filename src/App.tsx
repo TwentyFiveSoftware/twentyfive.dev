@@ -1,20 +1,17 @@
 import React from 'react';
-
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAngleDown} from '@fortawesome/free-solid-svg-icons';
 import {faGithub, faItchIo} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
-
-import styles from './styles/App.module.scss';
-
-import {ReactComponent as TwentyFiveIcon} from './assets/icon.svg';
+import * as styles from './styles/App.module.scss';
+import TwentyFiveIcon from 'url:./assets/icon.svg';
 import ProjectList from './components/ProjectList';
 
 const App = () => (
     <>
         <section className={styles.landingZone}>
             <div className={styles.background}/>
-            <div className={styles.icon}><TwentyFiveIcon/></div>
+            <div className={styles.icon}><img src={TwentyFiveIcon} alt={}/></div>
             <div className={styles.overlay}>
                 <div className={styles.logo}/>
                 <div className={styles.socialButtons}>

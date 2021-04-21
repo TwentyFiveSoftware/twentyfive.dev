@@ -1,8 +1,7 @@
 import React, {FunctionComponent} from 'react';
 import {IconDefinition} from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
-import styles from '../styles/Button.module.scss';
+import * as styles from '../styles/Button.module.scss';
 
 const Button: FunctionComponent<{ icon: IconDefinition, iconRight: boolean, text: string, color: string, href: string, itemProp: string }> =
     ({icon, iconRight, text, color, href, itemProp}) => (

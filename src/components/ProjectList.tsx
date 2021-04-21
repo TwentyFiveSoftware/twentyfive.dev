@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import styles from '../styles/App.module.scss';
+import * as styles from '../styles/App.module.scss';
 import type {ProjectInfo} from '../types';
 import {COLORS, PROJECTS} from '../content';
 import ProjectElement from './ProjectElement';
