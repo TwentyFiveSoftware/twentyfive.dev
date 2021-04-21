@@ -13,6 +13,11 @@ export const COLORS: Color[] = [
 
 export const PROJECTS: Project[] = [
     {
+        name: 'GroupWatch',
+        fullName: 'TwentyFiveSoftware/groupwatch-frontend',
+        image: {fontAwesomeIcon: faYoutube}
+    },
+    {
         name: 'SpaceX',
         fullName: 'TwentyFiveSoftware/spacex',
         image: {fontAwesomeIcon: faRocket}
@@ -26,11 +31,6 @@ export const PROJECTS: Project[] = [
         name: 'FileShare',
         fullName: 'TwentyFiveSoftware/fileshare',
         image: {fontAwesomeIcon: faShare}
-    },
-    {
-        name: 'Watch2Gether (Clone)',
-        fullName: 'TwentyFiveSoftware/watch2gether-client',
-        image: {fontAwesomeIcon: faYoutube}
     },
     {
         name: 'Video Recorder',
