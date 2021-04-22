@@ -11,7 +11,7 @@ const App = () => (
     <>
         <section className={styles.landingZone}>
             <div className={styles.background}/>
-            <div className={styles.icon}><img src={TwentyFiveIcon} alt={}/></div>
+            <div className={styles.icon}><img src={TwentyFiveIcon} alt={''}/></div>
             <div className={styles.overlay}>
                 <div className={styles.logo}/>
                 <div className={styles.socialButtons}>
