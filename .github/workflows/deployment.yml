@@ -1,4 +1,4 @@
-name: build and deploy
+name: deploy
 
 on:
   push:
@@ -15,18 +15,12 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
       - name: Create CNAME
-        run: echo twentyfive.dev > dist/CNAME
+        run: echo twentyfive.dev > src/CNAME
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
-          folder: dist
+          folder: src
           clean: true
